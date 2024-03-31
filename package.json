@@ -9,6 +9,7 @@
   "author": "Nurbolat",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^3.0.2",
     "del": "^7.1.0",
     "gulp": "^4.0.2",
