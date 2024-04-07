@@ -8,4 +8,13 @@ $(function(){
      autoplaySpeed: 2000
   });
 
+    $(".star").rateYo({
+      rating: 4,
+      starWidth: "17px",
+      normalFill:"#ccccce",
+      ratedFill:"#ffc35b",
+      readOnly:true
+    });
+   
+
 });
