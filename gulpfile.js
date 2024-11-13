@@ -32,7 +32,12 @@ async function styles() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
-        'app/js/main.js'
+        'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
+        'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
+        'app/js/main.js' // Исправленный путь к основному скрипту
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -67,3 +72,4 @@ exports.build = build;
 
 // Задача по умолчанию
 exports.default = parallel(styles, scripts, browsersync, watching);
+
